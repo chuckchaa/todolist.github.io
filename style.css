@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+	font-size: 14px;
+	color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%;
+}
+
+.todo-list {
+	width: 95%;
+	max-width: 1000px;
+	min-width: 300px;
+	margin: 50px 15px;
+	min-height: 400px;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 15px;
+}
+
+
+.todo-list__title {
+	text-align: center;
+}
+
+.title {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.todo-list__form {
+	margin: 40px 0 20px;
+}
+.form {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.form__input {
+	background-color: transparent;
+	padding: 5px 5px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	transition: border .5s ease-out;
+	color: #fff;
+	font-size: 16px;
+}
+.form__input:focus, .form__input:active {
+	outline: none;
+	border-bottom: 2px solid #fff;
+}
+.form__input:focus::placeholder {
+	opacity: .4;
+}
+.form__input::placeholder {
+	color: #fff;
+}
+.button {
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: background .25s ease-out, color .25s ease-out;
+	cursor: pointer;
+	font-size: 16px;
+}
+.button:focus, .button:active {
+	outline: none;
+}
+.form__button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+}
+
+.list {
+	border-top: 2px solid #fff;
+}
+
+.list__none {
+	text-transform: capitalize;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+}
+
+.list__item {
+	background-color: #fff;
+	color: #000;
+	font-size: 16px;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 700;
+}
+
+.list__task {
+	flex: 1 1 80%;
+	max-width: 70%;
+	word-wrap: break-word;
+}
+
+.list__button {
+	margin: 0 10px 0 30px;
+	background-color: #000;
+	color: #fff;
+}
+.list__button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #000;
+}
